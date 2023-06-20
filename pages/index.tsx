@@ -7,15 +7,18 @@ import Valeurs from "@/components/valeurs"
 import Collaborations from "@/components/collaboration"
 import Etudes from "@/components/etudes"
 import Podcast from "@/components/podcast"
+import Newsletter from "@/components/newsletter"
+import { Heading1, Paragraph } from "@/components/text"
+import Footer from "@/components/footer"
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <section className="pl-24 mt-[max(2vh,4rem)] max-w-[100vw]">
+      <section className="px-8 md:pr-0 md:pl-24 mt-[max(2vh,4rem)] max-w-[100vw]">
         <div className="flex justify-between gap-20">
           <div className="flex flex-col gap-16 items-start mt-6">
-            <h1 className="text-8xl leading-snug font-bold relative">
+            <Heading1>
               Un numerique
               <br />
               plus sage
@@ -30,8 +33,8 @@ export default function Home() {
                   fill="currentColor"
                 />
               </svg>
-            </h1>
-            <p className="text-xl font-normal w-[89%]">
+            </Heading1>
+            <Paragraph className="font-normal w-[89%]">
               Notre mission principale est de{" "}
               <span className="text-2xl text-ui-blue font-bold">
                 sensibiliser
@@ -53,12 +56,12 @@ export default function Home() {
                 utilisation responsable
               </span>{" "}
               des technologies.
-            </p>
+            </Paragraph>
             <Button className="bg-ui-blue text-ui-white font-bold text-2xl">
               Inscrivez-vous à la newsletters
             </Button>
           </div>
-          <div className="w-[75%] relative overflow-x-hidden pb-10">
+          <div className="hidden md:block w-[75%] relative overflow-x-hidden pb-10">
             <img
               src="/ezgif.com-crop.gif"
               className="absolute max-w-none w-[100%] bottom-0 right-0"
@@ -68,7 +71,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="mx-auto flex justify-center">
+      <div className="mt-8 md:mt-0 mx-auto flex justify-center">
         <svg
           width="150"
           height="154"
@@ -91,6 +94,8 @@ export default function Home() {
       <Etudes />
       <Events />
       <Podcast />
+      <Newsletter />
+      <Footer />
     </>
   )
 }

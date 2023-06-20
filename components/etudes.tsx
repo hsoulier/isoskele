@@ -1,30 +1,29 @@
 import Card from "@/components/Card"
+import { Heading2, ParagraphBase } from "@/components/text"
 import React from "react"
 
 type Props = {}
 
 const Etudes = (props: Props) => {
   return (
-    <section className="mx-24 flex flex-col gap-11 mt-44">
+    <section className="mx-8 md:mx-24 flex flex-col gap-11 mt-44">
       <div className="flex justify-between relative">
         <div className="flex flex-col gap-11">
-          <h2 className="font-bold text-5xl whitespace-nowrap">
-            Nos sujets d’études
-          </h2>
-          <p className="w-1/2">
+          <Heading2 className="whitespace-nowrap">Nos sujets d’études</Heading2>
+          <ParagraphBase className="w-full md:w-1/2">
             Notre mission principale est de sensibiliser, d&apos;informer et
             d&apos;éduquer les utilisateurs sur les enjeux liés à l&apos;éthique
             et à la responsabilité numérique, afin de favoriser une utilisation
             responsable des technologies.
-          </p>
+          </ParagraphBase>
         </div>
         <img
           src="/bubble-gum-test-tubes-and-flask.gif"
           alt="Lab"
-          className="absolute right-0 -translate-y-1/3 w-[30vw]"
+          className="hidden md:block absolute right-0 -translate-y-1/3 w-[30vw]"
         />
       </div>
-      <div className="flex justify-start gap-11">
+      <div className="flex flex-wrap justify-start gap-11">
         <Card
           title="Estime de soi"
           content="Quizz, événements à venir, livre blanc, podcasts,..."

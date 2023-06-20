@@ -1,12 +1,13 @@
 import ChevronLeft from "@/components/icons/chevron-left"
 import ChevronRight from "@/components/icons/chevron-right"
+import { Heading2, Heading3, Paragraph } from "@/components/text"
 import Link from "next/link"
 import React from "react"
 
 type Props = {}
 const Card = () => {
   return (
-    <div className="snap-start w-1/2 flex-shrink-0 flex-grow px-6 py-8 rounded-3xl bg-ui-white">
+    <div className="snap-start w-full md:w-1/2 flex-shrink-0 flex-grow px-6 py-8 rounded-3xl bg-ui-white">
       <div className="flex justify-between">
         <span className="text-xl">31 mai - 03 juin</span>
         <span className="flex gap-2">
@@ -27,11 +28,11 @@ const Card = () => {
           Nantes
         </span>
       </div>
-      <h3 className="mt-3 text-4xl font-medium">Web2day x SOFOS</h3>
-      <p className="text-regular text-lg text-ui-gray my-6">
+      <Heading3 className="mt-3">Web2day x SOFOS</Heading3>
+      <Paragraph className="text-ui-gray my-6">
         Le Web2day c’est 3 jours intenses et festifs dédiés aux nouvelles
         tendances et technologies du moment.
-      </p>
+      </Paragraph>
       <span className="inline-block py-1 px-5 text-sm bg-ui-turquoise rounded-full">
         Conférences
       </span>
@@ -42,10 +43,10 @@ const Card = () => {
 const Events = (props: Props) => {
   return (
     <div className="w-screen mt-44">
-      <section className="mx-24 flex flex-col px-20 py-10 gap-10 bg-ui-violet-200 rounded-3xl">
+      <section className="mx-8 md:mx-24 flex flex-col px-8 md:px-20 py-10 gap-10 bg-ui-violet-200 rounded-3xl">
         <div className="flex justify-between">
           <div className="flex gap-5 items-end">
-            <h1 className="text-5xl font-bold">Nos évènements</h1>
+            <Heading2>Nos évènements</Heading2>
             <Link href="/events" className="underline uppercase">
               Voir tout
             </Link>
@@ -59,7 +60,7 @@ const Events = (props: Props) => {
             </button>
           </div>
         </div>
-        <div className="snap-mandatory snap-x flex flex-nowrap overflow-scroll gap-3 justify-start">
+        <div className="snap-mandatory snap-x flex flex-nowrap overflow-scroll gap-3 justify-start flex-col md:flex-row ">
           <Card />
           <Card />
           <Card />
