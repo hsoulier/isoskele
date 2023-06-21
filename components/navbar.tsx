@@ -1,20 +1,34 @@
 import Logo from "@/components/logo"
 import Button from "@/components/ui/button"
+import { cn } from "@/lib/utils"
 import Link from "next/link"
 import React from "react"
 
-type Props = {}
+type Props = {
+  black?: boolean
+}
 
-const Navbar = (props: Props) => {
+const Navbar = ({ black }: Props) => {
   return (
-    <header className="mt-12 flex flex-col md:flex-row relative items-center md:justify-between mx-8 md:mx-32 md:items-end gap-4 md:gap-0">
-      <Logo />
+    <header className="pt-12 flex flex-col md:flex-row relative items-center md:justify-between mx-8 md:mx-32 gap-4 md:gap-0">
+      <Logo className={black ? "text-ui-black" : ""} />
       <nav className="md:absolute left-1/2 bottom-2 md:-translate-x-1/2 inline-flex gap-4 md:gap-8">
-        <Link href="/sujet-etude">Sujets d&apos;études</Link>
-        <Link href="/evenements">Evènements</Link>
-        <Link href="/podcasts">Podcasts</Link>
+        <Link className="font-bold" href="/sujets-etude">
+          Sujets d&apos;étude
+        </Link>
+        <Link className="font-bold" href="/evenements">
+          Evènements
+        </Link>
+        <Link className="font-bold" href="/podcasts">
+          Podcasts
+        </Link>
+        <Link className="font-bold" href="/formations">
+          Formations
+        </Link>
       </nav>
-      <Button className="hidden md:block">Contact</Button>
+      <Button className={cn("hidden md:block", black && "bg-ui-black")}>
+        Vous êtes une entreprise
+      </Button>
     </header>
   )
 }

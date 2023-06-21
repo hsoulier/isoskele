@@ -24,7 +24,7 @@ const Card = ({ title, content, link, url }: Props) => {
           alt="illustration"
         />
       </div>
-      <div className="rounded-b-3xl bg-ui-white py-6 px-8 relative h-[220px]">
+      <div className="rounded-b-3xl bg-ui-white py-6 px-8 relative h-[220px] flex flex-col justify-between">
         <Heading3 className={cn("mt-3", !link && "opacity-50 text-ui-black")}>
           {title}
         </Heading3>
@@ -34,7 +34,7 @@ const Card = ({ title, content, link, url }: Props) => {
           </ParagraphBase>
         )}
         {link && (
-          <Link href="/" className="flex items-center gap-1">
+          <Link href="/sujet-etude/impact-sur-les-jeunes" className="flex items-center gap-1 justify-self-end">
             En savoir plus <ChevronRight className="text-ui-gray" />
           </Link>
         )}

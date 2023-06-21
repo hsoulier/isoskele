@@ -1,15 +1,22 @@
 import ChevronLeft from "@/components/icons/chevron-left"
 import ChevronRight from "@/components/icons/chevron-right"
 import { Heading2, Heading3, Paragraph } from "@/components/text"
+import { cn } from "@/lib/utils"
 import Link from "next/link"
 import React from "react"
 
-type Props = {}
-const Card = () => {
+type CardProps = {
+  date: string
+  place: string
+  title: string
+  tag: string
+  desc: string
+}
+const Card = ({ date, place, title, tag, desc }: CardProps) => {
   return (
     <div className="snap-start w-full md:w-1/2 flex-shrink-0 flex-grow px-6 py-8 rounded-3xl bg-ui-white">
       <div className="flex justify-between">
-        <span className="text-xl">31 mai - 03 juin</span>
+        <span className="text-xl">{date}</span>
         <span className="flex gap-2">
           <svg
             width="20"
@@ -25,22 +32,25 @@ const Card = () => {
               fill="#111827"
             />
           </svg>
-          Nantes
+          {place}
         </span>
       </div>
-      <Heading3 className="mt-3">Web2day x SOFOS</Heading3>
-      <Paragraph className="text-ui-gray my-6">
-        Le Web2day c’est 3 jours intenses et festifs dédiés aux nouvelles
-        tendances et technologies du moment.
-      </Paragraph>
-      <span className="inline-block py-1 px-5 text-sm bg-ui-turquoise rounded-full">
-        Conférences
+      <Heading3 className="mt-3">{title}</Heading3>
+      <Paragraph className="text-ui-gray my-6">{desc}</Paragraph>
+      <span
+        className={cn(
+          "inline-block py-1 px-5 text-sm rounded-full",
+          tag === "Conférences" && "bg-ui-turquoise",
+          tag === "Salon" && "bg-ui-orange"
+        )}
+      >
+        {tag}
       </span>
     </div>
   )
 }
 
-const Events = (props: Props) => {
+const Events = () => {
   return (
     <div className="w-screen mt-44">
       <section className="mx-8 md:mx-24 flex flex-col px-8 md:px-20 py-10 gap-10 bg-ui-violet-200 rounded-3xl">
@@ -61,15 +71,30 @@ const Events = (props: Props) => {
           </div>
         </div>
         <div className="snap-mandatory snap-x flex flex-nowrap overflow-scroll gap-3 justify-start flex-col md:flex-row ">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Card
+            date="31 mai - 3 juin"
+            place="Nantes"
+            title="Web2day x SOFOS"
+            tag="Conférences"
+            desc="Le Web2day c’est 3 jours intenses et festifs dédiés aux nouvelles
+            tendances et technologies du moment."
+          />
+          <Card
+            date="3 juillet"
+            place="Marseille"
+            title="Numériday"
+            tag="Salon"
+            desc="Le Web2day c’est 3 jours intenses et festifs dédiés aux nouvelles
+            tendances et technologies du moment."
+          />
+          <Card
+            date="31 mai - 3 juin"
+            place="Nantes"
+            title="Web2day x SOFOS"
+            tag="Conférences"
+            desc="Le Web2day c’est 3 jours intenses et festifs dédiés aux nouvelles
+            tendances et technologies du moment."
+          />
         </div>
       </section>
     </div>

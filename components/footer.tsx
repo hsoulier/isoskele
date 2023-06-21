@@ -12,8 +12,8 @@ const Footer = (props: Props) => {
       <div className="flex-col md:flex-row flex justify-between items-center">
         <Logo />
         <nav className="flex-col md:flex-row inline-flex gap-8 md:gap-12 mr-24">
-          <Link className="font-semibold text-xl" href="/sujet-etude">
-            Sujets d&apos;études
+          <Link className="font-semibold text-xl" href="/sujets-etude">
+            Sujets d&apos;étude
           </Link>
           <Link className="font-semibold text-xl" href="/evenements">
             Evènements

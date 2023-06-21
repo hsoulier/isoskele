@@ -2,9 +2,7 @@ import Card from "@/components/Card"
 import { Heading2, ParagraphBase } from "@/components/text"
 import React from "react"
 
-type Props = {}
-
-const Etudes = (props: Props) => {
+const Etudes = () => {
   return (
     <section className="mx-8 md:mx-24 flex flex-col gap-11 mt-44">
       <div className="flex justify-between relative">

@@ -35,7 +35,7 @@ const Valeurs = (props: Props) => {
           </div>
 
           <div className="flex flex-col p-6 bg-ui-violet-200 text-[#42445D] rounded-3xl">
-            <Heading3 className="font-semibold">Numérique responsable</Heading3>
+            <Heading3 className="font-semibold">Transparence</Heading3>
             <ParagraphBase>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet
               pretium sit odio non. Aenean dolor, ullamcorper amet dolor donec.
@@ -43,7 +43,7 @@ const Valeurs = (props: Props) => {
           </div>
 
           <div className="flex flex-col p-6 bg-ui-turquoise text-[#42445D] rounded-3xl">
-            <Heading3 className="font-semibold">Numérique responsable</Heading3>
+            <Heading3 className="font-semibold">Accessible</Heading3>
             <ParagraphBase>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet
               pretium sit odio non. Aenean dolor, ullamcorper amet dolor donec.
