@@ -15,7 +15,7 @@ const Navbar = ({ black }: Props) => {
     <header className="pt-12 flex flex-col md:flex-row relative items-center md:justify-between mx-8 md:mx-32 gap-4 md:gap-0">
       <Logo className={black ? "text-ui-black" : ""} />
       <nav className="md:absolute left-1/2 bottom-2 md:-translate-x-1/2 inline-flex gap-4 md:gap-8">
-        <Link className="font-bold" href="/sujets-etude/impact-sur-les-jeunes">
+        <Link className="font-bold" href="/sujet-etude/impact-sur-les-jeunes">
           Sujets d&apos;étude
         </Link>
         <Link className="font-bold" href="/evenements">
