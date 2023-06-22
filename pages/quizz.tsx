@@ -235,10 +235,10 @@ const Quiz = (props: Props) => {
               <div className="flex flex-col gap-3">
                 {a1 && (
                   <ParagraphBase
-                    onClick={(e) => {
-                      console.log(e)
-                    }}
-                    className="flex items-center gap-4"
+                    onClick={(e) =>
+                      e.currentTarget.classList.toggle("no-check")
+                    }
+                    className="flex items-center gap-4 no-check cursor-pointer"
                   >
                     <span className="w-6 h-6 rounded-lg border border-ui-black grid place-content-center">
                       <Check size="18" />
@@ -247,24 +247,52 @@ const Quiz = (props: Props) => {
                   </ParagraphBase>
                 )}
                 {a2 && (
-                  <ParagraphBase className="flex items-center gap-4">
-                    <span className="inline-block w-6 h-6 rounded-lg border border-ui-black"></span>
+                  <ParagraphBase
+                    onClick={(e) =>
+                      e.currentTarget.classList.toggle("no-check")
+                    }
+                    className="flex items-center gap-4 no-check cursor-pointer"
+                  >
+                    <span className="w-6 h-6 rounded-lg border border-ui-black grid place-content-center">
+                      <Check size="18" />
+                    </span>
                     {a2}
                   </ParagraphBase>
                 )}
                 {a3 && (
-                  <ParagraphBase className="flex items-center gap-4">
-                    <span className="inline-block w-6 h-6 rounded-lg border border-ui-black"></span>
+                  <ParagraphBase
+                    onClick={(e) =>
+                      e.currentTarget.classList.toggle("no-check")
+                    }
+                    className="flex items-center gap-4 no-check cursor-pointer"
+                  >
+                    <span className="w-6 h-6 rounded-lg border border-ui-black grid place-content-center">
+                      <Check size="18" />
+                    </span>
                     {a3}
                   </ParagraphBase>
                 )}
                 {a4 && (
-                  <ParagraphBase className="flex items-center gap-4">
-                    <span className="inline-block w-6 h-6 rounded-lg border border-ui-black"></span>
+                  <ParagraphBase
+                    onClick={(e) =>
+                      e.currentTarget.classList.toggle("no-check")
+                    }
+                    className="flex items-center gap-4 no-check cursor-pointer"
+                  >
+                    <span className="w-6 h-6 rounded-lg border border-ui-black grid place-content-center">
+                      <Check size="18" />
+                    </span>
                     {a4}
                   </ParagraphBase>
                 )}
               </div>
+              {(index === 4 || index === 11) && (
+                <img
+                  src="/bubble-gum-megaphone-in-the-browser-window 2.gif"
+                  alt="Illustration"
+                  className="mx-auto self-center w-96 h-96"
+                />
+              )}
             </div>
           ))}
         </div>

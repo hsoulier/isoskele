@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils"
+import { SERVER_PROPS_ID } from "next/dist/shared/lib/constants"
 import { ComponentProps } from "react"
 
 export const Heading1 = ({ children, className }: ComponentProps<"h1">) => (
@@ -23,10 +24,10 @@ export const Heading4 = ({ children, className }: ComponentProps<"h4">) => (
   <h4 className={cn("text-5xl font-bold", className)}>{children}</h4>
 )
 
-export const Paragraph = ({ children, className }: ComponentProps<"p">) => (
-  <p className={cn("text-xl font-normal", className)}>{children}</p>
+export const Paragraph = ({ children, className, ...props }: ComponentProps<"p">) => (
+  <p className={cn("text-xl font-normal", className)} {...props}>{children}</p>
 )
 
-export const ParagraphBase = ({ children, className }: ComponentProps<"p">) => (
-  <p className={cn("text-base", className)}>{children}</p>
+export const ParagraphBase = ({ children, className, ...props }: ComponentProps<"p">) => (
+  <p className={cn("text-base", className)} {...props}>{children}</p>
 )
