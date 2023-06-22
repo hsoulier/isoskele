@@ -2,6 +2,7 @@ import Logo from "@/components/logo"
 import Button from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
+import { useRouter } from "next/router"
 import React from "react"
 
 type Props = {
@@ -9,6 +10,7 @@ type Props = {
 }
 
 const Navbar = ({ black }: Props) => {
+  const router = useRouter()
   return (
     <header className="pt-12 flex flex-col md:flex-row relative items-center md:justify-between mx-8 md:mx-32 gap-4 md:gap-0">
       <Logo className={black ? "text-ui-black" : ""} />
@@ -26,7 +28,10 @@ const Navbar = ({ black }: Props) => {
           Formations
         </Link>
       </nav>
-      <Button className={cn("hidden md:block", black && "bg-ui-black")}>
+      <Button
+        onClick={() => router.push("/entreprise")}
+        className={cn("hidden md:block", black && "bg-ui-black")}
+      >
         Vous êtes une entreprise
       </Button>
     </header>
