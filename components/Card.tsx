@@ -22,7 +22,11 @@ const Card = ({
   bg = "bg-ui-white",
 }: Props) => {
   return (
-    <div className={cn("flex flex-col w-80", className)}>
+    <Link
+     passHref
+      href="/sujet-etude/impact-sur-les-jeunes"
+      className={cn("flex flex-col w-80", className)}
+    >
       <div className="h-36 bg-ui-violet-base rounded-t-3xl w-full">
         <img
           src={url}
@@ -56,7 +60,7 @@ const Card = ({
           </Link>
         )}
       </div>
-    </div>
+    </Link>
   )
 }
 
