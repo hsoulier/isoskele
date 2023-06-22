@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Accessibilité",
+    "point-1": "Assurez-vous que vos produits numériques sont accessibles à tous les utilisateurs, y compris ceux ayant des limitations physiques, sensorielles ou cognitives.",
+    "point-2": "Adoptez les normes d'accessibilité reconnues (comme les WCAG) pour garantir une expérience utilisateur inclusive."
+  },
+  {
+    "title": "Transparence",
+    "point-1": "Fournissez des informations claires et compréhensibles sur la manière dont vous collectez, utilisez et stockez les données personnelles des utilisateurs.",
+    "point-2": "Informez les utilisateurs sur les algorithmes utilisés et les décisions automatisées qui peuvent les affecter."
+  },
+  {
+    "title": "Éthique sociale",
+    "point-1": "Respectez les droits de l'homme dans toutes vos activités numériques, en évitant notamment les discriminations et en promouvant la diversité et l'inclusion.",
+    "point-2": "Veillez à ce que vos partenaires commerciaux respectent également des normes éthiques et sociales élevées."
+  },
+  {
+    "title": "Eco-conception",
+    "point-1": "Réduisez la consommation d'énergie de vos produits numériques en adoptant des pratiques d'éco-conception, comme l'optimisation des performances et la gestion efficace des ressources.",
+    "point-2": "Encouragez la durabilité en favorisant la réparabilité, la recyclabilité et l'utilisation de matériaux respectueux de l'environnement."
+  },
+  {
+    "title": "Sensibilisation",
+    "point-1": "Sensibilisez les utilisateurs aux enjeux du numérique responsable et de l'éthique sociale à travers des campagnes de communication et des actions de formation.",
+    "point-2": "Partagez des bonnes pratiques et des ressources pour encourager d'autres acteurs à adopter des approches similaires."
+  },
+  {
+    "title": "Participation des parties prenantes",
+    "point-1": "Impliquez les parties prenantes pertinentes, y compris les utilisateurs, les experts en la matière, les organisations de la société civile et les décideurs politiques, dans le processus de prise de décision.",
+    "point-2": ""
+  },
+  {
+    "title": "Audit et évaluation",
+    "point-1": "Réalisez régulièrement des audits internes pour évaluer la conformité de vos pratiques aux normes d'accessibilité, de transparence, d'éthique sociale et d'éco-conception.",
+    "point-2": "Encouragez des évaluations externes indépendantes pour renforcer la confiance et la crédibilité de votre activité."
+  },
+  {
+    "title": "Collaboration",
+    "point-1": "Collaborez avec d'autres acteurs du secteur pour partager des connaissances, développer des normes communes et promouvoir l'adoption de pratiques durables et éthiques.",
+    "point-2": ""
+  },
+  {
+    "title": "Veilles technologiques",
+    "point-1": "Restez informé des avancées technologiques et des tendances émergentes dans le domaine du numérique responsable et de l'éthique sociale, afin d'adapter constamment vos pratiques.",
+    "point-2": ""
+  },
+  {
+    "title": "Responsabilité sociale",
+    "point-1": "Intégrez la responsabilité sociale dans votre modèle d'affaires en alignant vos objectifs économiques avec des objectifs sociaux et environnementaux plus larges.",
+    "point-2": ""
+  }
+]

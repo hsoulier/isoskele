@@ -193,14 +193,18 @@ const Statistic = (props: Props) => {
               </span>
             </ParagraphBase>
             <ParagraphBase>
-              En effet, l&apos;utilisation excessive et compulsive des médias
-              sociaux peut présenter des similitudes avec{" "}
+              Cette dépendance aux médias sociaux peut avoir de{" "}
               <span className="text-ui-blue font-bold">
-                les comportements addictifs liés aux substances toxiques
+                graves répercussions
+              </span>{" "}
+              sur la santé mentale et émotionnelle des jeunes. Tout comme
+              l&apos;abus de substances toxiques, l&apos;utilisation excessive
+              des médias sociaux peut créer une{" "}
+              <span className="text-ui-blue font-bold">
+                dépendance psychologique
               </span>
-              . Les réseaux sociaux captivent l&apos;attention des jeunes,
-              modifient leur comportement et peuvent entraîner une dépendance
-              néfaste pour leur développement.
+              , où les individus ressentent un besoin compulsif de se connecter
+              et d&apos;interagir en ligne.
             </ParagraphBase>
           </div>
           <div className="h-96 w-96 flex-shrink-0 overflow-visible">

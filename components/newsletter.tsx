@@ -31,8 +31,7 @@ const Newsletter = (props: Props) => {
         </svg>
       </Heading2>
       <Paragraph className="w-4/5 md:w-2/5 text-center text-white">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua
+        Pour en apprendre tous les mois sur le numérique éthique et responsable
       </Paragraph>
       <input
         type="email"

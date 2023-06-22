@@ -42,10 +42,8 @@ const ImpactSurLesJeunes = () => {
             </svg>
           </Heading1>
           <Paragraph className="font-normal text-center w-2/5">
-            Notre mission principale est de sensibiliser, d&apos;informer et
-            d&apos;éduquer les utilisateurs sur les enjeux liés à l&apos;éthique
-            et à la responsabilité numérique, afin de favoriser une utilisation
-            responsable des technologies.
+            Vous voulez savoir quel est l’impact des réseaux sociaux sur votre
+            santé mentale ?
           </Paragraph>
           <Button className="bg-ui-black text-ui-white font-bold text-2xl">
             Passer le quizz

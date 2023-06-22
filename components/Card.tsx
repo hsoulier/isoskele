@@ -9,11 +9,20 @@ type Props = {
   content?: string
   link?: boolean
   url?: string
+  className?: string
+  bg?: string
 }
 
-const Card = ({ title, content, link, url }: Props) => {
+const Card = ({
+  title,
+  content,
+  link,
+  url,
+  className,
+  bg = "bg-ui-white",
+}: Props) => {
   return (
-    <div className="flex flex-col w-80">
+    <div className={cn("flex flex-col w-80", className)}>
       <div className="h-36 bg-ui-violet-base rounded-t-3xl w-full">
         <img
           src={url}
@@ -24,7 +33,12 @@ const Card = ({ title, content, link, url }: Props) => {
           alt="illustration"
         />
       </div>
-      <div className="rounded-b-3xl bg-ui-white py-6 px-8 relative h-[220px] flex flex-col justify-between">
+      <div
+        className={cn(
+          "rounded-b-3xl py-6 px-8 relative h-[220px] flex flex-col justify-between",
+          bg
+        )}
+      >
         <Heading3 className={cn("mt-3", !link && "opacity-50 text-ui-black")}>
           {title}
         </Heading3>
@@ -34,7 +48,10 @@ const Card = ({ title, content, link, url }: Props) => {
           </ParagraphBase>
         )}
         {link && (
-          <Link href="/sujet-etude/impact-sur-les-jeunes" className="flex items-center gap-1 justify-self-end">
+          <Link
+            href="/sujet-etude/impact-sur-les-jeunes"
+            className="flex items-center gap-1 justify-self-end"
+          >
             En savoir plus <ChevronRight className="text-ui-gray" />
           </Link>
         )}
