@@ -102,7 +102,7 @@ const Entreprise = ({ router }: Props) => {
           <Card
             bg="bg-white"
             className="shrink-0"
-            title="Rentabiliez votre capital data"
+            title="Rentabiliser votre capital data"
             url="/bubble-gum-girl-waiting 1.png"
             link
           />
