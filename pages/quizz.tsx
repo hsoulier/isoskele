@@ -200,14 +200,14 @@ const Quiz = ({ router }: any) => {
             une utilisation responsable des réseaux sociaux.
           </Paragraph>
           <Button
-            onClick={() => router.push("/quiz")}
+            onClick={() => router.push("/quizz")}
             className="bg-ui-black text-ui-white font-bold text-2xl"
           >
             Passer le Quiz
           </Button>
         </div>
         <img
-          src="/bubble-gum-financial-statistics 1.png"
+          src="/financial.gif"
           alt="Illustrations"
           className="absolute -bottom-16 right-0 w-1/3 h-auto"
         />

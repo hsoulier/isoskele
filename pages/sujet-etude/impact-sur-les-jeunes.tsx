@@ -47,7 +47,7 @@ const ImpactSurLesJeunes = ({ router }: any) => {
             santé mentale ?
           </Paragraph>
           <Button
-            onClick={() => router.push("/quiz")}
+            onClick={() => router.push("/quizz")}
             className="bg-ui-black text-ui-white font-bold text-2xl"
           >
             Passer le quizz

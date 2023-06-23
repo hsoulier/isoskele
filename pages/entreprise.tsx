@@ -274,7 +274,7 @@ const Entreprise = ({ router }: Props) => {
         </Paragraph>
         <Button
           className="bg-white text-ui-blue font-bold"
-          onClick={() => router.push("/quiz")}
+          onClick={() => router.push("/quizz")}
         >
           Faire le test
         </Button>
