@@ -3,9 +3,8 @@ import Navbar from "@/components/navbar"
 import { Heading1, Heading2, Paragraph, ParagraphBase } from "@/components/text"
 import Button from "@/components/ui/button"
 import { Check } from "lucide-react"
+import { withRouter } from "next/router"
 import React from "react"
-
-type Props = {}
 
 const quizContent = [
   {
@@ -170,7 +169,7 @@ const quizContent = [
   },
 ] as const
 
-const Quiz = (props: Props) => {
+const Quiz = ({ router }: any) => {
   return (
     <>
       <main className="bg-ui-violet-200 pb-80 relative">
@@ -200,7 +199,10 @@ const Quiz = (props: Props) => {
             développer des solutions adaptées. Rejoignez-nous pour promouvoir
             une utilisation responsable des réseaux sociaux.
           </Paragraph>
-          <Button className="bg-ui-black text-ui-white font-bold text-2xl">
+          <Button
+            onClick={() => router.push("/quiz")}
+            className="bg-ui-black text-ui-white font-bold text-2xl"
+          >
             Passer le Quiz
           </Button>
         </div>
@@ -306,7 +308,7 @@ const Quiz = (props: Props) => {
 
         <div>
           {" "}
-          <Heading2 className="mx-24 text-ui-blue">Reminder</Heading2>
+          <Heading2 className="mx-24 text-ui-blue">Rappel</Heading2>
           <ParagraphBase className="mx-24 w-5/12 mt-4">
             N&apos;oubliez pas que ce quizz est basé sur des réponses
             subjectives et ne constitue pas une évaluation professionnelle. Il
@@ -322,4 +324,4 @@ const Quiz = (props: Props) => {
   )
 }
 
-export default Quiz
+export default withRouter(Quiz)

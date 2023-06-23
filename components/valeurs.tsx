@@ -1,6 +1,7 @@
 import { Heading2, Heading3, ParagraphBase } from "@/components/text"
 import Button from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { useRouter } from "next/router"
 import React from "react"
 
 type Props = {
@@ -8,6 +9,7 @@ type Props = {
 }
 
 const Valeurs = ({ bg = "bg-ui-violet-100" }: Props) => {
+  const router = useRouter()
   return (
     <div className={cn("mt-14 w-screen pb-16", bg)}>
       <section
@@ -70,23 +72,11 @@ const Valeurs = ({ bg = "bg-ui-violet-100" }: Props) => {
           </div>
         </div>
       </section>
-      <Button className="mx-auto flex items-center mt-4 md:mt-0">
-        <svg
-          width="25"
-          height="24"
-          viewBox="0 0 25 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M4.5 16L4.5 17C4.5 18.6569 5.84315 20 7.5 20L17.5 20C19.1569 20 20.5 18.6569 20.5 17L20.5 16M16.5 12L12.5 16M12.5 16L8.5 12M12.5 16L12.5 4"
-            stroke="#F2F2F2"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-        Télécharger notre charte
+      <Button
+        onClick={() => router.push("/guidelines")}
+        className="mx-auto flex items-center mt-4 md:mt-0"
+      >
+        Voir nos guildelines
       </Button>
     </div>
   )

@@ -8,9 +8,10 @@ import { Heading1, Heading2, Paragraph } from "@/components/text"
 import Button from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
+import { withRouter } from "next/router"
 import React from "react"
 
-const ImpactSurLesJeunes = () => {
+const ImpactSurLesJeunes = ({ router }: any) => {
   return (
     <>
       <main className="bg-ui-violet-200 pb-48 relative">
@@ -45,7 +46,10 @@ const ImpactSurLesJeunes = () => {
             Vous voulez savoir quel est l’impact des réseaux sociaux sur votre
             santé mentale ?
           </Paragraph>
-          <Button className="bg-ui-black text-ui-white font-bold text-2xl">
+          <Button
+            onClick={() => router.push("/quiz")}
+            className="bg-ui-black text-ui-white font-bold text-2xl"
+          >
             Passer le quizz
           </Button>
         </div>
@@ -154,4 +158,4 @@ const ImpactSurLesJeunes = () => {
   )
 }
 
-export default ImpactSurLesJeunes
+export default withRouter(ImpactSurLesJeunes)
