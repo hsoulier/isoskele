@@ -19,7 +19,7 @@ export default function Home() {
         <div className="flex justify-between gap-20">
           <div className="flex flex-col gap-16 items-start mt-6">
             <Heading1>
-              Un numerique
+              Un numérique
               <br />
               plus sage
               <svg

@@ -60,7 +60,7 @@ const Valeurs = ({ bg = "bg-ui-violet-100" }: Props) => {
           </div>
 
           <div className="flex flex-col p-6 bg-ui-turquoise text-[#42445D] rounded-3xl">
-            <Heading3 className="font-semibold">Accessible</Heading3>
+            <Heading3 className="font-semibold">Accessibilité</Heading3>
             <ParagraphBase>
               Nous nous engageons à créer des solutions numériques inclusives
               qui permettent à chacun d&apos;accéder, de comprendre et de
@@ -76,7 +76,7 @@ const Valeurs = ({ bg = "bg-ui-violet-100" }: Props) => {
         onClick={() => router.push("/guidelines")}
         className="mx-auto flex items-center mt-4 md:mt-0"
       >
-        Voir nos guildelines
+        Voir nos guidelines
       </Button>
     </div>
   )
